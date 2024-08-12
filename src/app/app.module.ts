@@ -3,15 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MyFirstComponent } from './my-first-component/my-first.component';
+import { FormsModule } from '@angular/forms';
+import { MessageDetailsComponent } from './message-details/message-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyFirstComponent,
+    MessageDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
+  //providers are the modules or services that we want to use in our application
   providers: [],
   bootstrap: [AppComponent]
 })
