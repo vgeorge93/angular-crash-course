@@ -8,7 +8,4 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent {
   constructor(private router: Router) {}
-  public navigateToAbout(): void {
-    this.router.navigate(['about']);
-  }
 }
